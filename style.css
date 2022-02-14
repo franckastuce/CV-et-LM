@@ -1,0 +1,239 @@
+body{
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    color: #fff;
+    height: 150vh;
+}
+.header{
+    height: 600px;
+    width: 100%;
+    }
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    gap: 30px;
+}
+/*--juste pour le stage--*/
+.stage{position: fixed;
+    top: 100px;
+    left: 300px;
+    height: 50px;
+    width: 200px;
+}
+
+/*--jeux pour la photo --*/
+/*--penser a changer la phots, c'est pas moi voir a rjouter 2 photos, effet derriere puis devant--*/
+
+.photo{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: rgba(255, 249, 249, 0.151);
+    backdrop-filter: blur( 10px);
+    -webkit-background-filter: blur( 10px);
+    display: flex;
+    top: -50px;
+    bottom: 100px;
+    border-radius: 50%;
+    transition: 1s;
+}
+.photo1{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.photo:hover{
+    z-index: 1;
+    border-radius: 5px;
+    background: rgba(255, 249, 249, 0.151);
+    backdrop-filter: blur( 10px);
+    -webkit-background-filter: blur( 10px);
+}
+.photo1:hover{
+    z-index: 1;
+    border-radius: 5px;
+    background-image: none;
+    
+}
+
+/*---chemin de vie ---*/
+
+.cvTotal{
+    position: relative;
+    height: 900px;
+    width: 700px;
+    border: 1px solid rgba(248, 247, 247, 0.151);
+    border-radius: 15px;
+    background: rgba(255, 249, 249, 0.151);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-background-filter: blur(7px);
+    margin: 5px;
+    padding: 10px;
+    transition: 1s;
+}
+.cvTotal:hover{
+    color: #000;
+}
+
+.arriere{
+    position: absolute;
+    z-index: -1;
+    font-size: 500px;
+    color: rgba(248, 229, 229, 0.151);
+    top:-450px;
+    left: 60px;
+}
+
+.adresse{
+    margin: 5px;
+}
+
+.competances{
+    display: flex;
+    position: relative;
+    height: 200px;
+    width: 97%;
+    background: rgba(255, 249, 249, 0.151);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10px);
+    -webkit-background-filter: blur( 10px);
+    border-radius: 20px;
+    padding:3px;
+    margin: 3px;
+}
+.front{
+    height: 90%;
+    width: 50%;
+    background: rgba(255, 249, 249, 0.151);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10px);
+    -webkit-background-filter: blur( 10px);
+    border-radius: 20px;
+    padding: 3px;
+    margin: 3px;
+}
+.back{
+    height: 90%;
+    width: 50%;
+    background: rgba(255, 249, 249, 0.151);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10px);
+    -webkit-background-filter: blur( 10px);
+    border-radius: 20px;
+    padding: 3px;
+    margin: 3px;
+}
+
+.texte{    
+    height: 250px;
+    width: 97%;
+    background: rgba(255, 249, 249, 0.151);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10px);
+    -webkit-background-filter: blur( 10px);
+    border-radius: 20px;
+    padding: 3px;
+    margin: 3px;
+}
+.texte p{
+    text-align: justify;
+}
+.footer{
+    display: flex;
+    height: 240px;
+    width: 97%;
+    background: rgba(255, 249, 249, 0.151);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10px);
+    -webkit-background-filter: blur( 10px);
+    border-radius: 20px;
+    padding: 3px;
+    margin: 3px;
+}
+.profil{
+    height: 220px;
+    width: 70%;
+    background: rgba(255, 249, 249, 0.151);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10px);
+    -webkit-background-filter: blur( 10px);
+    border-radius: 20px;
+    padding: 3px;
+    margin: 3px;
+    text-align: justify;
+}
+.loisir{
+    height: 220px;
+    width: 30%;
+    background: rgba(255, 249, 249, 0.151);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10px);
+    -webkit-background-filter: blur( 10px);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/*-- lettre de motivation---*/
+
+.lmTotal{
+    position: relative;
+    height: 900px;
+    width: 700px;
+    border: 1px solid rgba(248, 247, 247, 0.151);
+    border-radius: 15px;
+    background: rgba(255, 249, 249, 0.151);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-background-filter: blur(7px);
+    margin: 5px;
+    padding: 10px;
+    transition: 1s;
+}
+.lmTotal:hover{
+    color: #000;
+    
+}
+.text{
+    height: 600px;
+    width: 97%;
+    background: rgba(255, 249, 249, 0.151);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10px);
+    -webkit-background-filter: blur( 10px);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+.text p{
+    text-align: justify;
+}
+.dure{
+    height: 100px;
+    width: 97%;
+    background: rgba(255, 249, 249, 0.151);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 10px);
+    -webkit-background-filter: blur( 10px);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+}
+.adresselm{
+    margin: 5px;
+    text-align: right;
+}
+.lmTitre{
+    margin: 5px;
+    text-align: right;
+}
